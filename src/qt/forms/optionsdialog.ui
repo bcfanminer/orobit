@@ -323,7 +323,7 @@
          <item>
           <widget class="QValueComboBox" name="lang">
            <property name="toolTip">
-            <string>The user interface language can be set here. This setting will take effect after restarting Bitcoin.</string>
+            <string>The user interface language can be set here. This setting will take effect after restarting Orobit.</string>
            </property>
           </widget>
          </item>
