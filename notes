@@ -1,0 +1,8 @@
+cd Orobit-Qt.app/Contents/MacOS/
+install_name_tool -change "/opt/local/lib/db48/libdb_cxx-4.8.dylib" "@executable_path/../Frameworks/libdb_cxx-4.8.dylib" Orobit-Qt
+otool -L Orobit-Qt.app/Contents/MacOS/Orobit-Qt
+macdeployqt Orobit-Qt.app
+cp /opt/local/lib/db48/libdb_cxx-4.8.dylib Orobit-Qt.app/Contents/Frameworks/
+sudo chown -R nobody Orobit-Qt.app/
+sudo macdeployqt Orobit-Qt.app -dmg
+sudo chown nobody Orobit-Qt.dmg
